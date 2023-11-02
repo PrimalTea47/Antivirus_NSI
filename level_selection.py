@@ -1,11 +1,12 @@
 import pygame
-from tools import write_text, font
-from easy_level import easy_level
-from medium_level import medium_level
-from hard_level import hard_level
+from tools import *
+from easy_level import *
+from medium_level import *
+from hard_level import *
+
 
 pygame.init()
-
+ 
 def lauching_level_selection_screen():
 
 	screen = pygame.display.set_mode((800,800))
@@ -46,7 +47,7 @@ def lauching_level_selection_screen():
 
 		if medium_condition:
 			medium_level()
-
+ 	
 		if hard_condition:
 			hard_level()
 
@@ -79,5 +80,5 @@ def lauching_level_selection_screen():
 
 		pygame.display.flip()
 
-	pygame.quit()
+	tout()
 
