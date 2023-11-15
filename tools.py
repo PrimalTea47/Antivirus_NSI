@@ -2,7 +2,7 @@ import pygame
 pygame.init()
 
 
-
+ 
 #variable utile pour la suite
 font = pygame.font.SysFont('arialblack', 75)
 
@@ -101,28 +101,6 @@ class Molecules:
 		elif id == 9:
 			return self.hit_pink
 
-
-
-
-	def get_rect_test(self,id:int):
-		if id == 1:
-			return self.hit_block
-		elif id == 2:
-			return self.hit_lightgreen
-		elif id == 3:
-			return self.hit_lightblue
-		elif id == 4:
-			return self.hit_red
-		elif id == 5:
-			return self.hit_orange
-		elif id == 6:
-			return self.hit_purple
-		elif id == 7:
-			return self.hit_darkblue
-		elif id == 8:
-			return self.hit_darkgreen
-		elif id == 9:
-			return self.hit_pink
 
 	#créer une fonction qui permet de déplacer les molécules
 	def move_molecule(self,pos):
